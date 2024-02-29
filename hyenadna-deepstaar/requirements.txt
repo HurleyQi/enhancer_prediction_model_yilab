@@ -20,7 +20,7 @@ prettytable
 numerize
 
 # Dataset specific packages
-torchtext==0.14.0 # LRA
+torchtext==0.16.2 # LRA  
 datasets # LRA
 
 # genomic specific
