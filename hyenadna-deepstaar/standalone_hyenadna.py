@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 """HyenaDNA training & inference example (Public)
 
-This code is adapted from the original colab tutorial on HyenaDNA. 
-Check that out for an easier entry point into the code.
+This code is adapted from the original colab tutorial on HyenaDNA. Check that out for an easier entry point into the code.
 
-We provide the code here as an example for those who want something outside colab, 
-with Huggingface integration.
+We provide the code here as an example for those who want something outside collab, with Huggingface integration.
 
 Original file is located at
     https://colab.research.google.com/drive/1wyVEQd4R3HYLTUOXEEQmp_I8aNC_aLhL

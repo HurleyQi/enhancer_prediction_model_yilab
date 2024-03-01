@@ -3,14 +3,12 @@
 
 """
 
-This is script is a simple HuggingFace wrapper around a HyenaDNA model, to enable a 
-one click example of how to load the pretrained weights and get embeddings.
+This is script is a simple HuggingFace wrapper around a HyenaDNA model, to enable a one click example
+of how to load the pretrained weights and get embeddings.
 
-It will instantiate a HyenaDNA model (model class is in the `standalone_hyenadna.py`), 
-and handle the downloading of pretrained weights from HuggingFace.
+It will instantiate a HyenaDNA model (model class is in the `standalone_hyenadna.py`), and handle the downloading of pretrained weights from HuggingFace.
 
-Check out the colab notebook for a simpler and more complete walk through of how to use HyenaDNA 
-with pretrained weights.
+Check out the colab notebook for a simpler and more complete walk through of how to use HyenaDNA with pretrained weights.
 
 """
 
