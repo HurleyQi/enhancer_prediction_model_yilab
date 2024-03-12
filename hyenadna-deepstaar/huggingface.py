@@ -120,7 +120,7 @@ class HyenaDNAPreTrainedModel(PreTrainedModel):
             checkpointing = config["checkpoint_mixer"] == True or config["checkpoint_mixer"] == True
         else:
             checkpointing = False
-
+        print("about to load weights")
         # grab state dict from both and load weights
         state_dict = load_weights(scratch_model.state_dict(), loaded_ckpt['state_dict'], checkpointing=checkpointing)
 
