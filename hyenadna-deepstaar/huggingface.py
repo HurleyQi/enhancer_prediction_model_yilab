@@ -107,13 +107,14 @@ class HyenaDNAPreTrainedModel(PreTrainedModel):
             if config is None:
                 config = json.load(open(os.path.join(pretrained_model_name_or_path, 'config.json')))
          
+        print("Testing if it reaches here")
 
         scratch_model = HyenaDNAModel(**config, use_head=use_head, n_classes=n_classes)  # the new model format
         loaded_ckpt = torch.load(
             os.path.join(pretrained_model_name_or_path, 'weights.ckpt'),
             map_location=torch.device(device)
         )
-
+        print("about to check if using gradient")
         # need to load weights slightly different if using gradient checkpointing
         if config.get("checkpoint_mixer", False):
             checkpointing = config["checkpoint_mixer"] == True or config["checkpoint_mixer"] == True
