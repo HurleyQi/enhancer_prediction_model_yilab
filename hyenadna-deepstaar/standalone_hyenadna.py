@@ -859,7 +859,7 @@ class SequenceDecoder(nn.Module):
 Multi-Head Regression for HyenaDNA
 """
 class RegressionHead(nn.Module):
-    def __init__(self, d_model, d_output, sequence_length=251):
+    def __init__(self, d_model, d_output, sequence_length=200):
         super().__init__()
         d_hidden = int((sequence_length) / 2)
         assert d_hidden > 0
