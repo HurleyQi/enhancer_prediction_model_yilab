@@ -872,7 +872,8 @@ class RegressionHead(nn.Module):
         self.sequence_length = sequence_length
     
     def forward(self, x):
-#         print("x: ", x.shape)
+        print("x: ", x.shape)
+        print("sequence length: ", self.sequence_length)
         x = x.view(-1, self.sequence_length * x.size(-1));
 #         print("new x:", x.shape)
         
