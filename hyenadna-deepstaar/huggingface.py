@@ -90,8 +90,6 @@ class HyenaDNAPreTrainedModel(PreTrainedModel):
                         use_head=False,
                         n_classes=2,
                       ):
-        if (n_classes == 3): 
-            raise Exception("should not be 2")
         # first check if it is a local path
         pretrained_model_name_or_path = os.path.join(path, model_name)
         print("pretrained model name: ", pretrained_model_name_or_path)
